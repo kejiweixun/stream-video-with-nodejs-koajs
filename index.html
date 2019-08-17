@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    video {
+      width: 640px;
+      height: 360px;
+      display: block;
+      margin: 0 auto;
+    }
+    p{
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <p>stream video with nodejs and koajs</p>
+  <video controls autoplay muted>
+    <source src='http://localhost:4000/video' type='video/mp4'>
+  </video>
+</body>
+</html>
