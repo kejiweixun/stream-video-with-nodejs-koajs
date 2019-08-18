@@ -40,5 +40,5 @@ router.get('/video', (ctx, next) => {
 
 
 app.use(router.routes());
-
-app.listen(4000, ()=>console.log('server running on localhost:4000...'))
+const port = process.env.PORT || 8080;
+app.listen(port, ()=>console.log(`server running on port: ${port}...`))
